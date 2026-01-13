@@ -117,6 +117,45 @@ Customer success: Dedicated squad
       </div>
     </section>
 
+    <section id="capabilities" class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2>Operational clarity that keeps builds grounded</h2>
+          <p>Every engagement pairs a strategic roadmap with resilient infrastructure and room to iterate fast.</p>
+        </header>
+
+        <div class="grid-3 cap-grid">
+          <article class="glass capability-card">
+            <h3>Systems-first delivery</h3>
+            <p>Runbooks, monitoring, and smoke tests get baked in before launch so nothing slips through the cracks.</p>
+            <ul class="cap-bullets">
+              <li>Telemetry & alerting</li>
+              <li>Regression safeguards</li>
+              <li>Uptime-driven planning</li>
+            </ul>
+          </article>
+          <article class="glass capability-card">
+            <h3>Cross-functional ops</h3>
+            <p>Bringing together product, design, and engineering to ship cohesive experiences with measurable value.</p>
+            <ul class="cap-bullets">
+              <li>Show-and-tell demos</li>
+              <li>Customer success playbooks</li>
+              <li>Documented handoffs</li>
+            </ul>
+          </article>
+          <article class="glass capability-card">
+            <h3>Growth-ready experimentation</h3>
+            <p>Ship confidence on day one and keep releasing with low-drag infrastructure and data-informed bets.</p>
+            <ul class="cap-bullets">
+              <li>Feature toggles</li>
+              <li>Fast feedback loops</li>
+              <li>Performance observability</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="services" class="section">
       <div class="container">
         <header class="section__head">
@@ -358,9 +397,19 @@ Customer success: Dedicated squad
           <div class="glass contact__card">
             <h3>Fast handoff</h3>
             <p class="muted">This website ships with Docker and nginx. You can deploy it anywhere.</p>
-            <div class="codebox">
-              <pre><code>docker build -t pilot999-site .
-docker run --rm -p 8080:80 pilot999-site</code></pre>
+            <div class="handoff-grid">
+              <div>
+                <strong>Delivery</strong>
+                <span>GitHub Actions → gh-pages builds the static frontend automatically.</span>
+              </div>
+              <div>
+                <strong>Reliability</strong>
+                <span>CDN-friendly assets, HTTPS enforced, and passive monitoring baked in.</span>
+              </div>
+              <div>
+                <strong>API</strong>
+                <span>Backend runs elsewhere—update `&lt;meta name="api-base"&gt;` and configure SMTP before sending.</span>
+              </div>
             </div>
             <div class="contact__bullets">
               <div><strong>Response time</strong><span class="muted">24–48h</span></div>
