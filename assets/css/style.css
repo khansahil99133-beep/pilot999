@@ -1,7 +1,7 @@
 /* pilot999 — static portfolio (dark, glass, premium) */
 :root{
-  --bg:#ffffff;
-  --bg2:#f4f6fb;
+  --bg:#fdfdfb;
+  --bg2:#e2e6f1;
   --text:#0f172a;
   --muted: var(--text);
   --line:rgba(15,23,42,.12);
@@ -20,7 +20,7 @@ body{
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color:var(--text);
   background:
-    linear-gradient(180deg, var(--bg) 0%, var(--bg2) 40%, var(--bg2) 100%);
+    linear-gradient(180deg, var(--bg) 0%, var(--bg) 30%, var(--bg2) 65%, #d7dae4 100%);
   line-height:1.55;
 }
 a{color:inherit;text-decoration:none}
