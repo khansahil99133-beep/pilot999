@@ -7,6 +7,15 @@
   const navLinks = $("[data-nav-links]");
   const toast = $(".toast");
   const toastText = $("[data-toast-text]");
+  const apiMeta = document.querySelector('meta[name="api-base"]');
+  const rawApiBase = apiMeta?.getAttribute("content")?.trim() || "/api";
+  const normalizedApiBase = rawApiBase.replace(/\/+$/, "");
+
+  function getApiUrl(path) {
+    const cleanedPath = path.replace(/^\/+/, "");
+    if (!normalizedApiBase) return `/${cleanedPath}`;
+    return `${normalizedApiBase}/${cleanedPath}`;
+  }
 
   function showToast(message) {
     if (!toast || !toastText) return;
@@ -189,7 +198,7 @@
     if (submitBtn) submitBtn.disabled = true;
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch(getApiUrl("contact"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, message }),
