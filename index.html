@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="pilot999 — Portfolio & Product Engineering" />
+  <meta name="api-base" content="" />
+  <meta name="theme-color" content="#0b0f1a" />
+  <title>pilot999 — Portfolio</title>
+
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-elevate>
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="pilot999 home">
+        <img src="assets/img/logo.svg" alt="" width="28" height="28" />
+        <span>pilot999</span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__links" data-nav-links>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact" class="btn btn--sm btn--primary">Let’s talk</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="orb orb--a"></div>
+        <div class="orb orb--b"></div>
+        <div class="grid"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__left">
+          <div class="pill">
+            <span class="dot"></span>
+            <span>Available for freelance • <strong>2026</strong></span>
+          </div>
+
+          <h1 class="hero__title">
+            We orchestrate <span class="grad">service provider</span><br/>
+            platforms that earn <span class="grad">customer confidence</span>.
+          </h1>
+
+          <p class="hero__subtitle">
+            pilot999 designs and operates high-trust service provider ecosystems with predictable uptime,
+            human-friendly workflows, and instrumentation that keeps every team aligned.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#work">See projects</a>
+            <button class="btn btn--ghost" type="button" data-copy="hello@pilot999.dev" aria-label="Copy email">
+              Copy email
+            </button>
+          </div>
+
+          <dl class="stats" aria-label="Highlights">
+            <div class="stat" data-count="48">
+              <dt>Projects shipped</dt>
+              <dd><span class="count">0</span>+</dd>
+            </div>
+            <div class="stat" data-count="11">
+              <dt>Countries served</dt>
+              <dd><span class="count">0</span></dd>
+            </div>
+            <div class="stat" data-count="99">
+              <dt>Performance focus</dt>
+              <dd><span class="count">0</span>%</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__right" aria-hidden="true">
+          <div class="glass card-hero">
+            <div class="card-hero__top">
+              <span class="chip">Design → Build → Ship</span>
+              <span class="pulse"></span>
+            </div>
+            <div class="terminal">
+              <div class="terminal__bar">
+                <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+                <span class="terminal__title">pilot999 / ship</span>
+              </div>
+                            <pre class="terminal__body"><code>Service readiness: Live
+SLA coverage: 99.5%+
+Observability: Full stack tracing
+Customer success: Dedicated squad
+</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container marquee" aria-label="Tech ticker">
+        <div class="marquee__track">
+          <span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>Postgres</span>
+          <span>Docker</span><span>CI/CD</span><span>Observability</span><span>Tailwind</span><span>Figma</span>
+          <span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>Postgres</span>
+          <span>Docker</span><span>CI/CD</span><span>Observability</span><span>Tailwind</span><span>Figma</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2>Services</h2>
+          <p>Everything needed to go from idea to a production-ready product.</p>
+        </header>
+
+        <div class="grid-3">
+          <article class="glass card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 7h10v10H7z" stroke="currentColor" stroke-width="1.6"/><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="1.6" opacity=".55"/></svg>
+            </div>
+            <h3>UI Engineering</h3>
+            <p>Responsive, accessible interfaces with polished animations and strong performance budgets.</p>
+            <ul class="ticks">
+              <li>Component systems</li>
+              <li>Design tokens</li>
+              <li>Perf + a11y</li>
+            </ul>
+          </article>
+
+          <article class="glass card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 8c2-3 8-3 10 0" stroke="currentColor" stroke-width="1.6"/><path d="M7 16c2 3 8 3 10 0" stroke="currentColor" stroke-width="1.6"/><path d="M12 4v16" stroke="currentColor" stroke-width="1.6" opacity=".55"/></svg>
+            </div>
+            <h3>Backend + APIs</h3>
+            <p>Clean services with auth, queues, caching, and reliable deployments.</p>
+            <ul class="ticks">
+              <li>REST / GraphQL</li>
+              <li>Postgres + Redis</li>
+              <li>Monitoring</li>
+            </ul>
+          </article>
+
+          <article class="glass card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 17l6-6 4 4 6-8" stroke="currentColor" stroke-width="1.6"/><path d="M4 19h16" stroke="currentColor" stroke-width="1.6" opacity=".55"/></svg>
+            </div>
+            <h3>Product Sprint</h3>
+            <p>Rapid prototypes and iterations to validate product direction in days, not months.</p>
+            <ul class="ticks">
+              <li>Wireframes → MVP</li>
+              <li>User feedback loops</li>
+              <li>Launch support</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section section--alt">
+      <div class="container">
+        <header class="section__head">
+          <h2>Selected work</h2>
+          <p>Some projects that show craft, clarity, and care for details.</p>
+        </header>
+
+        <div class="work__toolbar">
+          <button class="chip-btn is-active" type="button" data-filter="all">All</button>
+          <button class="chip-btn" type="button" data-filter="web">Web</button>
+          <button class="chip-btn" type="button" data-filter="backend">Backend</button>
+          <button class="chip-btn" type="button" data-filter="design">Design</button>
+        </div>
+
+        <div class="grid-2 work" data-work-grid>
+          <article class="glass work__card" data-kind="web">
+            <img src="assets/img/project-1.svg" alt="" loading="lazy" />
+            <div class="work__meta">
+              <h3>Neon Landing</h3>
+              <p>High-converting marketing site with a strong performance budget and a clean CMS workflow.</p>
+              <div class="work__tags"><span>Next.js</span><span>SEO</span><span>CMS</span></div>
+              <button class="link" type="button" data-modal="Neon Landing" data-desc="A conversion-focused landing with structured content, animations, and Lighthouse targets." data-stack="Next.js • Edge • MDX" data-link="#">
+                View details →
+              </button>
+            </div>
+          </article>
+
+          <article class="glass work__card" data-kind="backend">
+            <img src="assets/img/project-2.svg" alt="" loading="lazy" />
+            <div class="work__meta">
+              <h3>Realtime Queue</h3>
+              <p>Job queue + workers with retry, observability, and measurable throughput improvements.</p>
+              <div class="work__tags"><span>Node</span><span>Redis</span><span>Telemetry</span></div>
+              <button class="link" type="button" data-modal="Realtime Queue" data-desc="Background processing with backoff, DLQ patterns, and metrics." data-stack="Node.js • Redis • OpenTelemetry" data-link="#">
+                View details →
+              </button>
+            </div>
+          </article>
+
+          <article class="glass work__card" data-kind="design">
+            <img src="assets/img/project-3.svg" alt="" loading="lazy" />
+            <div class="work__meta">
+              <h3>Design System</h3>
+              <p>Tokens + components with docs, accessibility, and consistent product UX.</p>
+              <div class="work__tags"><span>Tokens</span><span>A11y</span><span>Docs</span></div>
+              <button class="link" type="button" data-modal="Design System" data-desc="A reusable component library with documented patterns and predictable theming." data-stack="Figma • Storybook • TS" data-link="#">
+                View details →
+              </button>
+            </div>
+          </article>
+
+          <article class="glass work__card" data-kind="web">
+            <img src="assets/img/project-4.svg" alt="" loading="lazy" />
+            <div class="work__meta">
+              <h3>Dashboard Pro</h3>
+              <p>Data-heavy dashboard with fast navigation, smart tables, and audit-ready exports.</p>
+              <div class="work__tags"><span>React</span><span>Charts</span><span>UX</span></div>
+              <button class="link" type="button" data-modal="Dashboard Pro" data-desc="Complex UI with careful states, filters, and performance." data-stack="React • Vite • Charts" data-link="#">
+                View details →
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="about__left">
+          <header class="section__head">
+            <h2>About</h2>
+            <p>Design-minded engineer focused on clarity, velocity, and maintainability.</p>
+          </header>
+
+          <div class="timeline glass">
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div>
+                <h3>Plan</h3>
+                <p>Define scope, risks, and a roadmap that protects time and budget.</p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div>
+                <h3>Build</h3>
+                <p>Implement clean architecture, testable modules, and strong UI systems.</p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div>
+                <h3>Ship</h3>
+                <p>CI/CD, monitoring, and fast iteration loops after launch.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__right">
+          <div class="glass quote">
+            <p>
+              “The difference between a good product and a great one is usually the invisible work:
+              performance budgets, a11y, state design, and clean deployments.”
+            </p>
+            <div class="quote__by">
+              <span class="avatar" aria-hidden="true"></span>
+              <div>
+                <strong>pilot999</strong>
+                <span>Product Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-2 mini">
+            <div class="glass mini__card">
+              <h3>Principles</h3>
+              <p>Simple > clever. Systems > hacks. Measure > guess.</p>
+            </div>
+            <div class="glass mini__card">
+              <h3>Deliverables</h3>
+              <p>Source code, docs, Docker, and handoff notes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section section--alt">
+      <div class="container">
+        <header class="section__head">
+          <h2>Stack</h2>
+          <p>Tools I use to ship reliable systems.</p>
+        </header>
+
+        <div class="stack">
+          <div class="glass stack__group">
+            <h3>Frontend</h3>
+            <div class="badges">
+              <span>TypeScript</span><span>React</span><span>Next.js</span><span>Vite</span><span>Storybook</span>
+            </div>
+          </div>
+          <div class="glass stack__group">
+            <h3>Backend</h3>
+            <div class="badges">
+              <span>Node.js</span><span>Postgres</span><span>Redis</span><span>REST</span><span>GraphQL</span>
+            </div>
+          </div>
+          <div class="glass stack__group">
+            <h3>Ops</h3>
+            <div class="badges">
+              <span>Docker</span><span>Nginx</span><span>CI/CD</span><span>Telemetry</span><span>Cloud</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2>Contact</h2>
+          <p>Tell me what you’re building. I’ll reply with next steps.</p>
+        </header>
+
+        <div class="contact">
+          <form class="glass form" id="contactForm" novalidate>
+            <div class="form__row">
+              <label>
+                Name
+                <input name="name" autocomplete="name" required placeholder="Your name" />
+              </label>
+              <label>
+                Email
+                <input name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+              </label>
+            </div>
+            <label>
+              Message
+              <textarea name="message" rows="5" required placeholder="What do you need help with?"></textarea>
+            </label>
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">Send message</button>
+              <p class="muted">Or email: <button class="link" type="button" data-copy="hello@pilot999.dev">hello@pilot999.dev</button></p>
+            </div>
+            <p class="form__note muted" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="glass contact__card">
+            <h3>Fast handoff</h3>
+            <p class="muted">This website ships with Docker and nginx. You can deploy it anywhere.</p>
+            <div class="codebox">
+              <pre><code>docker build -t pilot999-site .
+docker run --rm -p 8080:80 pilot999-site</code></pre>
+            </div>
+            <div class="contact__bullets">
+              <div><strong>Response time</strong><span class="muted">24–48h</span></div>
+              <div><strong>Timezone</strong><span class="muted">UTC +05:45</span></div>
+              <div><strong>Focus</strong><span class="muted">Web + Backend</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <a class="brand brand--small" href="#top">
+            <img src="assets/img/logo.svg" alt="" width="22" height="22" />
+            <span>pilot999</span>
+          </a>
+          <p class="muted">© <span id="year"></span> pilot999. Built with care.</p>
+        </div>
+
+        <div class="footer__right">
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <dialog class="modal" id="workModal" aria-label="Project details">
+    <div class="modal__inner glass">
+      <div class="modal__head">
+        <h3 id="modalTitle">Project</h3>
+        <button class="icon-btn" type="button" data-close-modal aria-label="Close">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M7 7l10 10M17 7L7 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <p class="muted" id="modalDesc"></p>
+      <div class="modal__meta">
+        <div>
+          <strong>Stack</strong>
+          <p class="muted" id="modalStack"></p>
+        </div>
+        <div>
+          <strong>Link</strong>
+          <p class="muted"><a id="modalLink" href="#" target="_blank" rel="noreferrer">Open</a></p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+    <span data-toast-text>Copied</span>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
